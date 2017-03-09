@@ -8,10 +8,14 @@ body{
 .header-Box{
     width:100%;
     height: 1rem;
-    /*background: red;*/
+    background: #ffffff;
     padding: 0 0.4rem;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
 }
 .header-yonhu{
     width:0.5rem;
@@ -94,7 +98,7 @@ body{
     align-items: center;
 }
 .zby_st_box .zby_header .zby_kuang span{
-    width: 0.36rem;
+    width: 0.4rem;
     height: 0.36rem;
     display: inline-block;
     margin-right: 0.2rem;
@@ -131,6 +135,10 @@ body{
 .zby_st_box .zby_bottom .zby_xuan .zby_xk .zby_lis{
     width: 100%;
     height: auto;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flexbox;
+    display: box;
     display: flex;
     justify-content:center;
     algin-items:center;
@@ -184,6 +192,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top:0.98rem;
+    left:0;
+    z-index: 999;
+    background: #ffffff;
 }
 .banner-dian span{
     width: 0.24rem;
@@ -351,11 +364,7 @@ body{
     z-index: 999;
     background: #ffffff;
 }
-.zby_box{
-    width: 100%;
-    height: 1.2rem;
-    margin-top: 0.42rem;
-}
+
 .watch-box .BtnBox{
     width: 100%;
     height: 100%;
@@ -375,9 +384,10 @@ body{
     line-height: 1.2rem;
     padding: 0 0.35rem;
  }
- #zby-hot{
-    color: #1D1D1D;
+ .zby-hot a{
+    color: #1D1D1D!important;
     font-weight: bold;
+    transition:color .5s;
  }
 /*watch app web 结束*/
 
@@ -458,3 +468,18 @@ body{
     background:url(../zbyimage/images/zby_pilun.png) no-repeat center center/cover;
 }   
 /*watch 文字结束*/
+
+/*底部选项卡开始*/
+.zby_Dbox{
+    display: none;
+}
+
+/*底部选项卡结束*/
+.zby_box{
+    width: 100%;
+    height: 1.2rem;
+}
+.zby_top{
+    width: 100%;
+    height: 2rem;
+}
