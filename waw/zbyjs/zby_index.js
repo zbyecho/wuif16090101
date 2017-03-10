@@ -79,19 +79,27 @@
 var swiper= new Swiper('.swiper-container',{
         pagination: '.swiper-pagination',
         paginationClickable: true
-    });
+})
 //底部选项卡结束
+var num=0
 function aa(){
+
+    num++
     var swiper= new Swiper('.swiper-container',{
         pagination: '.swiper-pagination',
         paginationClickable: true
     });
+    console.log("aa这是第"+num+"");
 }
+var fum=0
+
 function bb(){
+    fum++
     var swiper2 = new Swiper('.swiper-container2',{
             pagination: '.swiper-pagination2',
             paginationClickable: true
     });
+     console.log("bb这是第"+fum+"");
 }
      
         

@@ -185,20 +185,36 @@ body{
 
 /*轮播点开始*/
 .banner-dian{
-    width: 100%;
-    height: 1rem;
-    display: flex;
+    /*width: 100%;
+    height: 1rem;*/
+    /*display: flex;
     justify-content: center;
-    align-items: center;
-    position: fixed;
+    align-items: center;*/
+   /* position: fixed;
     top:0.98rem;
     left:0;
     z-index: 999;
     background: #ffffff;
+      text-align: center;*/
+}
+.banner-dian div{
+    /*margin: 0 auto;*/
+    display: inline-block;
+    /*text-align: center;*/
+    line-height: 1rem;
+    width: 100%;
+    height: 1rem;
+ position: fixed;
+    top:0.98rem;
+    left:0;
+    z-index: 999;
+    background: #ffffff;
+      text-align: center
 }
 .banner-dian span{
     width: 0.24rem;
     height: 0.24rem;
+   
     border-radius: 50%;
     margin-right:0.38rem;
     transition:all .3s;
