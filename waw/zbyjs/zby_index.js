@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 // 导航开始
     var qubtn=document.querySelector('.zby_quxiao');
     var rest=document.querySelector('.zby_rest');
@@ -44,10 +46,21 @@
     var a=Btn[0].getElementsByTagName('a')
    console.log(Btn[0].innerText) 
 
+      var chu=function chu(){
+        var swiper= new Swiper('.swiper-container',{
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        })
+    } 
+    chu()
     Title.innerHTML=Btn[0].innerHTML
     for(var i=0;i<Btn.length;i++){
         Btn[i].index=i;
         Btn[i].addEventListener('touchstart',function(){
+
+            // chu()=null;
+            // console.log(chu)
+            chu=null;
             for(var j=0;j<Btn.length;j++){
                 Btn[j].classList.remove('zby-hot')
                 Dbox[j].style.display="none";
@@ -56,34 +69,26 @@
             Dbox[this.index].style.display="block";
             Title.innerHTML=this.innerHTML
             cc(this.index);
+            console.log(this.index)
         })
         
     }
 
-   
-    function cc(i){
-        
+function cc(i){
         if(i==0){
                 
-                console.log(i)
                   aa()
-                  return
+                 
         }else if(i==2){
-                console.log(i)
                 bb()
-                  return
+                  
 
-        }
-        
-    }
-var swiper= new Swiper('.swiper-container',{
-        pagination: '.swiper-pagination',
-        paginationClickable: true
-})
+        }   
+ }
+
 //底部选项卡结束
 var num=0
 function aa(){
-
     num++
     var swiper= new Swiper('.swiper-container',{
         pagination: '.swiper-pagination',
@@ -103,3 +108,4 @@ function bb(){
 }
      
         
+}) 
